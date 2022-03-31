@@ -18,20 +18,22 @@ CONTAINER_NAME= docker ps -a | tail -n +2 | awk '{print $2}'
 echo $CONTAINER_NAME
 
 # Get Command
-echo "*----* SHELL *-----*"
+echo "*----* SHELL & CREATED *-----*"
 
-CONTAINER_SHELL= docker ps -a | tail -n +2 | awk '{print $3, $4 $5}' # need to get rid of 5 cutting some stuff in 
+CONTAINER_SHELL= docker ps -a | tail -n +2 | awk '{print $3, $4, $5, $6, $7, $8, $9}' # need to get rid of 5 cutting some stuff in 
 
 echo $CONTAINER_SHELL
-
-# Get Created 
-echo "---- CREATED ----"
-
 
 # Status(es)
 echo "---- STATUS ----"
 
+CONTAINER_STATUS= docker ps -a | tail -n +1 | awk '{print $9, $10, $11}'
 
+echo $CONTAINER_STATUS
+
+# CONTAINER_STATUS= docker ps -a | tail -n +1 | awk '{print $6, $7, $8, $9}'
+
+# echo $CONTAINER_STATUS
 # Ports 
 echo "---- PORTS ----"
 
