@@ -41,6 +41,4 @@ for i in `docker inspect --format='{{.Name}}' $(docker ps -q) | cut -f2 -d\/`
 	echo "OK"
 done
 
-echo "Done. Fuck off."
-
-echo ""
+echo "Done. Run docker ps -l to verify."
