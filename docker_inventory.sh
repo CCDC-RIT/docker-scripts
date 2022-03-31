@@ -20,7 +20,7 @@ echo $CONTAINER_NAME
 # Get Command
 echo "*----* SHELL *-----*"
 
-CONTAINER_SHELL= docker ps -a | tail -n +2 | awk '{print $3, $4, $5[0]}' # need to get rid of 5 cutting some stuff in 
+CONTAINER_SHELL= docker ps -a | tail -n +2 | awk '{print $3, $4, $5}' # need to get rid of 5 cutting some stuff in 
 
 echo $CONTAINER_SHELL
 
