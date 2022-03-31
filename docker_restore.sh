@@ -3,5 +3,6 @@
 # Get all container IDs 
 
 # Docker Restore 
-# Consider backing up to a local tar file? Might be more secure??
 
+
+echo "MAKE SURE YOU BACKED UP THE DOCKER FILES BEFORE RUNNING THIS SCRIPT"
