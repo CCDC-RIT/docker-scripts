@@ -23,3 +23,23 @@ do
 done
 
 
+# For Centos/RHEL/Fedora
+# Install EPEL Repository: 
+# yum -y install epel-release
+# yum install ansible
+
+
+# For Debian/Ubuntu
+# apt-get update
+# apt-get install lsb-release software-properties-common
+
+# For Ubuntu
+# apt-add-repository -y ppa:ansible/ansible
+# apt-get update
+
+# For Debian
+# echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list.d/ansible-debian.list
+# apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
+# apt-get update
+
+# apt-get install ansible 
