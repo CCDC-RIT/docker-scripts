@@ -28,7 +28,6 @@ done
 # yum -y install epel-release
 # yum install ansible
 
-
 # For Debian/Ubuntu
 # apt-get update
 # apt-get install lsb-release software-properties-common
